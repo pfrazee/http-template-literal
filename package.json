@@ -1,6 +1,6 @@
 {
   "name": "http-template-literal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make HTTP requests the way TBL intended.",
   "main": "index.js",
   "dependencies": {
