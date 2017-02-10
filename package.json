@@ -19,5 +19,13 @@
     "request"
   ],
   "author": "Paul Frazee <pfrazee@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfrazee/http-template-literal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pfrazee/http-template-literal/issues"
+  },
+  "homepage": "https://github.com/pfrazee/http-template-literal#readme"
 }
