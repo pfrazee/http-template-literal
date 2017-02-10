@@ -3,6 +3,8 @@
 Make HTTP requests the way TBL intended.
 
 ```javascript
+const http = require('http-template-literal')
+
 var res = await http`
   GET https://httpbin.org/get HTTP/1.1
   Accept: application/json
