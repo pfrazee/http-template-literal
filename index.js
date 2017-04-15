@@ -1,5 +1,4 @@
 const net = require('net')
-const { parse, format } = require('url')
 
 module.exports = function (strings, ...values) {
   return new Promise((resolve, reject) => {

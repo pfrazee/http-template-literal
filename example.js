@@ -1,5 +1,4 @@
 const http = require('.')
-const pkg = require('./package')
 
 http`
   GET juliangruber.com/ HTTP/1.1
