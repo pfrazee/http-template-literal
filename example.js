@@ -1,12 +1,14 @@
-const http = require('./index')
+const http = require('.')
+const pkg = require('./package')
 
 http`
-  GET https://httpbin.org/get HTTP/1.1
-  Accept: application/json
+  GET / HTTP/1.1
+  Host: juliangruber.com
 `.then(res => {
   console.log('Request one:', res.body)
   return http`
-    POST https://httpbin.org/post HTTP/1.1
+    POST /post HTTP/1.1
+    Host: httpbin.org
     Content-Type: application/json
 
     ${JSON.stringify({
