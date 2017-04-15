@@ -2,13 +2,11 @@ const http = require('.')
 const pkg = require('./package')
 
 http`
-  GET / HTTP/1.1
-  Host: juliangruber.com
+  GET juliangruber.com/ HTTP/1.1
 `.then(res => {
   console.log('Request one:', res.body)
   return http`
-    POST /post HTTP/1.1
-    Host: httpbin.org
+    POST httpbin.org/post HTTP/1.1
     Content-Type: application/json
 
     ${JSON.stringify({
