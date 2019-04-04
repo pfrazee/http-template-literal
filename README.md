@@ -22,9 +22,3 @@ var res = await http`
 `
 console.log('Request two:', res.body)
 ```
-
-## FAQ
-
-### Oh cool, should I use this?
-
-No.
