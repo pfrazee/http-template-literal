@@ -1,4 +1,4 @@
-const http = require('./index')
+const http = require('../src')
 
 http`
   GET https://httpbin.org/get HTTP/1.1
@@ -15,7 +15,7 @@ http`
     })}
   `
 }).then(res => {
-  console.log('Request two:', res.body)  
+  console.log('Request two:', res.body)
 }).catch(err => {
   console.log('Oh no!', err)
 })

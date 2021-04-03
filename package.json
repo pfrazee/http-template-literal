@@ -2,14 +2,16 @@
   "name": "http-template-literal",
   "version": "1.0.2",
   "description": "Make HTTP requests the way TBL intended.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "jest": "^26.6.3"
   },
   "keywords": [
     "template",
