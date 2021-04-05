@@ -2,14 +2,26 @@
   "name": "http-template-literal",
   "version": "1.0.2",
   "description": "Make HTTP requests the way TBL intended.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/request": "^2.48.5",
+    "@types/request-promise": "^4.1.47",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsdx watch",
+    "build": "tsdx build",
+    "prepare": "tsdx build"
   },
   "keywords": [
     "template",
