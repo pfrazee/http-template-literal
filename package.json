@@ -3,25 +3,28 @@
   "version": "1.0.2",
   "description": "Make HTTP requests the way TBL intended.",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/http-template-literal.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "src"
   ],
   "dependencies": {
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
   "devDependencies": {
+    "@types/node": "^14.14.37",
     "@types/request": "^2.48.5",
     "@types/request-promise": "^4.1.47",
-    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
     "typescript": "^4.2.3"
   },
   "scripts": {
     "dev": "tsdx watch",
-    "build": "tsdx build",
-    "prepare": "tsdx build"
+    "build": "tsdx build --format cjs,esm",
+    "prepare": "npm run build"
   },
   "keywords": [
     "template",
